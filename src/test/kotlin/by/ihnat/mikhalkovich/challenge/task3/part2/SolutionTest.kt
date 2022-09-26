@@ -142,6 +142,26 @@ class SolutionTest {
         // then
         assertEquals(expected, result)
     }
+
+    @Test
+    fun `positive case 7`() {
+        // given
+        val map = arrayOf(
+            intArrayOf(0, 0, 0, 0, 0, 0),
+            intArrayOf(1, 1, 1, 1, 1, 0),
+            intArrayOf(0, 0, 0, 0, 0, 0),
+            intArrayOf(0, 1, 1, 1, 1, 1),
+            intArrayOf(1, 1, 1, 1, 1, 1),
+            intArrayOf(0, 0, 0, 0, 0, 0)
+        )
+        val expected = 21
+
+        // when
+        val result = Solution.solution(map)
+
+        // then
+        assertEquals(expected, result)
+    }
 }
 
 /*
